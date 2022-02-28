@@ -1,5 +1,10 @@
 ### Hi there 👋
 
+- Homepage 🔗: https://dere.press
+- Ethereum: m4tsuri.eth
+- Mail 📧: me@m4tsuri.com
+- Keywords: Binary Security 🔐, Static Analysis, Rust, Smart Contracts, Ethereum
+
 <!--
 **M4tsuri/M4tsuri** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
