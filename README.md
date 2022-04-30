@@ -1,6 +1,8 @@
 ### Hi there 👋
 
-- Blog: https://m4tsuri.io (hosted on IPFS) / https://dere.press (hosted on server)
+- Blog: 
+  - https://m4tsuri.io (hosted on IPFS, could be slow)
+  - https://dere.press
 - Resume: https://cv.m4tsuri.io
 - Ethereum: [m4tsuri.eth](https://etherscan.io/address/0x8f28da6ff26e782cb0495e581fadbcec320a4769)
 - Mail 📧: me@m4tsuri.com
