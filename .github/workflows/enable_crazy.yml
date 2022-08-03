@@ -13,7 +13,8 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   kfc_crazy_thu:
-    uses: mingjun97/file-regex-replace@master
+    name: File Regex Replace
+    uses: mingjun97/file-regex-replace@v1
     with: 
       regex: '<!-- KFC -->'
       replacement: '#[CLICK HERE](https://m4tsuri.io/hidden/kfc_crazy_thu/index.html)'
