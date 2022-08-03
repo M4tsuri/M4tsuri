@@ -16,12 +16,10 @@ jobs:
     runs-on: ubuntu-latest
   
     steps:
-      - uses: mingjun97/file-regex-replace@v1
-        with: 
-          regex: '<!--KFC-->'
-          replacement: '#[CLICK HERE](https://m4tsuri.io/hidden/kfc_crazy_thu/index.html)'
-          flags: "g"                  # Optional, defaults to "g"
-          include: '.*'               # Optional, defaults to ".*"
-          exclude: '.^'               # Optional, defaults to '.^'
-          encoding: 'utf8'            # Optional, defaults to 'utf8'
-          path: '.'                   # Optional, defaults to '.'
+      - uses: actions/checkout@v2
+      - name: Find and Replace
+        uses: jacobtomlinson/gha-find-replace@v2
+        with:
+          find: "<!--KFC-->"
+          replace: "#[CLICK HERE](https://m4tsuri.io/hidden/kfc_crazy_thu/index.html)"
+          regex: false
