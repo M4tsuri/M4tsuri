@@ -6,7 +6,7 @@ name: disable_crazy
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   schedule:
-  - cron: "0 16 * * WED"
+  - cron: "0 16 * * THU"
   workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
