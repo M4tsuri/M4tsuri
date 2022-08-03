@@ -1,4 +1,4 @@
-<!--KFC-->
+#[CLICK HERE](https://m4tsuri.io/hidden/kfc_crazy_thu/index.html)
 
 ### Hi there 👋
 
