@@ -9,19 +9,16 @@ on:
   - cron: "0 16 * * WED"
   workflow_dispatch:
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
   kfc_crazy_thu:
     uses: mingjun97/file-regex-replace
-      with: 
-        regex: '<!-- KFC -->'
-        replacement: '#[CLICK HERE](https://m4tsuri.io/hidden/kfc_crazy_thu/index.html)'
-        flags: "g"                  # Optional, defaults to "g"
-        include: 'README.md'    # Optional, defaults to ".*"
-        exclude: '.^'               # Optional, defaults to '.^'
-        encoding: 'utf8'            # Optional, defaults to 'utf8'
-        path: '.'                   # Optional, defaults to '.'
+    with: 
+      regex: '<!-- KFC -->'
+      replacement: '#[CLICK HERE](https://m4tsuri.io/hidden/kfc_crazy_thu/index.html)'
+      flags: "g"                  # Optional, defaults to "g"
+      include: 'README.md'    # Optional, defaults to ".*"
+      exclude: '.^'               # Optional, defaults to '.^'
+      encoding: 'utf8'            # Optional, defaults to 'utf8'
+      path: '.'                   # Optional, defaults to '.'
