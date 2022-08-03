@@ -22,7 +22,17 @@ jobs:
           regex: '<!--KFC-->'
           replacement: '#[CLICK HERE](https://m4tsuri.io/hidden/kfc_crazy_thu/index.html)'
           flags: "g"                  # Optional, defaults to "g"
-          include: '.*'               # Optional, defaults to ".*"
+          include: 'README.md'               # Optional, defaults to ".*"
           exclude: '.^'               # Optional, defaults to '.^'
           encoding: 'utf8'            # Optional, defaults to 'utf8'
           path: '.'                   # Optional, defaults to '.'
+      - uses: zwaldowski/git-commit-action@v1
+        with:
+          # Directory to create commit in
+          working_directory: '.' # optional, default is .
+          # Commit message
+          commit_message: 'enable kfc crazy mode' # default is Automated commit
+          # Name to use for commit author
+          author_name: 'M4tsuri chan' # optional, default is GitHub Actions
+          # Email to use for commit author
+          author_email: 'bot@m4tsuri.com' # optional, default is actions@github.com
