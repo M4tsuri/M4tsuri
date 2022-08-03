@@ -1,0 +1,43 @@
+# This is a basic workflow to help you get started with Actions
+
+name: enable_crazy
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  schedule:
+  - cron: "0 16 * * WED"
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  crazy_thu_enable:
+    runs-on: ubuntu-latest
+  
+    steps:
+      - uses: actions/checkout@v2
+      - uses: mingjun97/file-regex-replace@v1
+        with: 
+          regex: '# \[KFC CRAZY THURSDAY\]\(https://m4tsuri.io/hidden/kfc_crazy_thu/index.html\)'
+          replacement: '<!--KFC-->'
+          flags: "g"                  # Optional, defaults to "g"
+          include: 'README.md'               # Optional, defaults to ".*"
+          exclude: '.^'               # Optional, defaults to '.^'
+          encoding: 'utf8'            # Optional, defaults to 'utf8'
+          path: '.'                   # Optional, defaults to '.'
+      - uses: zwaldowski/git-commit-action@v1
+        with:
+          # Directory to create commit in
+          working_directory: '.' # optional, default is .
+          # Commit message
+          commit_message: 'disable kfc crazy mode' # default is Automated commit
+          # Name to use for commit author
+          author_name: 'M4tsuri chan' # optional, default is GitHub Actions
+          # Email to use for commit author
+          author_email: 'bot@m4tsuri.com' # optional, default is actions@github.com
+      - uses: ad-m/github-push-action@v0.6.0
+        with:
+          # Token for the repo. Can be passed in using $\{{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: 'main' # optional, default is master
