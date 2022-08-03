@@ -21,7 +21,7 @@ jobs:
           regex: '<!-- KFC -->'
           replacement: '#[CLICK HERE](https://m4tsuri.io/hidden/kfc_crazy_thu/index.html)'
           flags: "g"                  # Optional, defaults to "g"
-          include: './README.md'      # Optional, defaults to ".*"
-          exclude: ''                 # Optional, defaults to '.^'
+          include: '.*'               # Optional, defaults to ".*"
+          exclude: '.^'               # Optional, defaults to '.^'
           encoding: 'utf8'            # Optional, defaults to 'utf8'
           path: '.'                   # Optional, defaults to '.'
