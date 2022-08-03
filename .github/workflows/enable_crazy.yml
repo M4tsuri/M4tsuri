@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: mingjun97/file-regex-replace@v1
         with: 
-          regex: '<!-- KFC -->'
+          regex: '<!--KFC-->'
           replacement: '#[CLICK HERE](https://m4tsuri.io/hidden/kfc_crazy_thu/index.html)'
           flags: "g"                  # Optional, defaults to "g"
           include: '.*'               # Optional, defaults to ".*"
