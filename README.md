@@ -5,10 +5,10 @@
 - Blog: 
   - https://m4tsuri.io
   - https://ipfs.m4tsuri.io (decentrialized version)
-- Resume: https://cv.m4tsuri.io (not available now)
+- Resume: https://cv.m4tsuri.io (not available currently)
 - Ethereum: [m4tsuri.eth](https://etherscan.io/address/0x8f28da6ff26e782cb0495e581fadbcec320a4769)
 - Mail 📧: me@m4tsuri.com
-- Keywords: Binary Security 🔐, Static Analysis, Rust, Smart Contracts, Ethereum
+- Keywords: Blockchain, Rust, Binary Security 🔐, Static Analysis
 
 <!--
 **M4tsuri/M4tsuri** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
