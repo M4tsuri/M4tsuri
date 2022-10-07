@@ -4,8 +4,7 @@
 
 - Blog: 
   - https://m4tsuri.io
-  - https://ipfs.m4tsuri.io (decentrialized version)
-- Resume: https://cv.m4tsuri.io (not available currently)
+  - https://ipfs.m4tsuri.io (decentralized version)
 - Ethereum: [m4tsuri.eth](https://etherscan.io/address/0x8f28da6ff26e782cb0495e581fadbcec320a4769)
 - Mail 📧: me@m4tsuri.com ([OpenGPG](https://keys.openpgp.org/vks/v1/by-fingerprint/76A241AF5AF15E22843024654B3FAC03AC5E7B3F))
 - Keywords: Blockchain, Rust, Binary Security 🔐, Static Analysis
